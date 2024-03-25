@@ -5,8 +5,9 @@ jobs:
   check-dependencies:
     runs-on: ubuntu-latest
     steps:
+      - name: test ls
+        run: ls
+      - name: test 2
+        uses: actions/checkout@v4
       - name: CMake Action
         uses: threeal/cmake-action@v1.3.0
-    #build-dir: _build
-    #cxx-compiler: gcc
-    #run-build: true
