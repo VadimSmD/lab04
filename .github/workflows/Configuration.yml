@@ -1,0 +1,11 @@
+name: Build
+run-name: ${{ github.actor }} compiling based on CMakeLists.txt
+on: [push]
+jobs:
+  check-dependencies:
+    runs-on: ubuntu-latest
+    - name: CMake Action
+    uses: threeal/cmake-action@v1.3.0
+    build-dir: _build
+    cxx-compiler: gcc
+    run-build: true
