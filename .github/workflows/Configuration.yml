@@ -4,7 +4,7 @@ on: [push]
 jobs:
   check-dependencies:
     runs-on: ubuntu-latest
-    - name: CMake Action
+    name: CMake Action
     uses: threeal/cmake-action@v1.3.0
     build-dir: _build
     cxx-compiler: gcc
